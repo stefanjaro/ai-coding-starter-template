@@ -32,6 +32,14 @@ When priorities conflict, choose in this order:
 7. Run relevant checks, fix failures, and re-run checks until they pass or a real blocker remains.
 8. Summarize changes, checks run, risks, and tradeoffs.
 
+## Implementation Plan
+
+- Living plan folder: `user-docs/implementation-plan/`
+- Use the `implementation-plan` skill when creating or materially updating phased MVP plans from PRDs or idea docs.
+- Keep `user-docs/implementation-plan/index.md` synchronized with phase files, including phase statuses: `NOT STARTED`, `IN PROGRESS`, or `COMPLETED`.
+- Update the active phase file during development with progress notes, verification results, blockers, and user-requested divergences from the original plan.
+- Record material scope, sequencing, stack, or data model changes in the plan before or alongside implementation so future agents can reconcile codebase state with plan history.
+
 ## Engineering Rules
 
 - Keep files generally under 400 lines.
@@ -115,3 +123,4 @@ Test categories:
 - `agent-reference/threat-modeling.md`: lightweight threat modeling guidance.
 - `agent-reference/dependency-policy.md`: dependency hygiene and approval criteria.
 - `agent-reference/skill-preferences.md`: user preferences for creating or updating agent skills.
+- `user-docs/implementation-plan/`: phased implementation plan, status signpost, progress notes, and divergence log.
