@@ -1,5 +1,5 @@
 ---
-name: implementation-plan
+name: generate-implementation-plan
 description: Create and maintain phased MVP implementation plans from a detailed idea document or PRD. Use when Codex needs to turn product requirements into iterative implementation phases, create a user-docs/implementation-plan folder with an index and phase files, track phase statuses, record progress, log divergences, and identify builder handoffs such as credentials, cloud setup, or external account actions during development.
 ---
 
