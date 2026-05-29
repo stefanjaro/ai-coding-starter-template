@@ -48,6 +48,9 @@ When priorities conflict, choose in this order:
 - Avoid catch-all utility files.
 - Prefer feature/domain-oriented organization.
 - Prefer explicit code over clever abstractions.
+- Write the least amount of code required to accomplish the task.
+- Prefer small changes over speculative generalization.
+- Do not add layers of abstraction until they are clearly needed.
 - Refactor when complexity rises.
 - Avoid broad unsolicited rewrites.
 - Preserve backwards compatibility unless instructed otherwise.
