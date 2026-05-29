@@ -17,9 +17,10 @@ Use this scaffold before the app has a real shape. The goal is to turn a rough i
    ```
 
 4. Ask the agent to update the idea file with the refined context.
-5. Ask the agent to fill in the Project Context placeholders in `AGENTS.md`.
-6. Discuss the right tech stack for the idea, including backend, auth, database, hosting, payments, analytics, email, file storage, and any privacy or security constraints.
-7. Install project-specific agent skills once the stack is known. Common examples:
+5. Ask the agent to run the `incrementally-validate-idea` skill against the idea document and append the output to that same idea file. This should simplify the concept, preserve the core user value, and propose an incremental validation path before planning implementation.
+6. Ask the agent to fill in the Project Context placeholders in `AGENTS.md`.
+7. Discuss the right tech stack for the idea, including backend, auth, database, hosting, payments, analytics, email, file storage, and any privacy or security constraints.
+8. Install project-specific agent skills once the stack is known. Common examples:
 
    ```sh
    npx skills add pbakaus/impeccable
@@ -27,10 +28,10 @@ Use this scaffold before the app has a real shape. The goal is to turn a rough i
    ```
 
    Install Supabase skills only for projects that use Supabase. For UI-heavy projects, run Impeccable's project-teaching flow after installation so the design guidance has product context.
-8. Ask the agent to update `agent-reference/stack-decisions.md` and any relevant `AGENTS.md` guidance with the chosen stack and constraints.
-9. Ask the agent to run the `implementation-plan` skill against the idea document to create `user-docs/implementation-plan/index.md` and phase files.
-10. Review the generated plan, tighten scope, and make sure the first phase has user-verifiable acceptance criteria.
-11. Start building one phase at a time. For example:
+9. Ask the agent to update `agent-reference/stack-decisions.md` and any relevant `AGENTS.md` guidance with the chosen stack and constraints.
+10. Ask the agent to run the `generate-implementation-plan` skill against the updated idea document to create `user-docs/implementation-plan/index.md` and phase files.
+11. Review the generated plan, tighten scope, and make sure the first phase has user-verifiable acceptance criteria.
+12. Start building one phase at a time. For example:
 
    ```text
    Execute phase 01.
