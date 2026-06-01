@@ -29,8 +29,9 @@ When priorities conflict, choose in this order:
 4. Write or update a small plan for non-trivial work.
 5. Add or adjust tests using TDD principles.
 6. Implement in small, reviewable steps.
-7. Run relevant checks, fix failures, and re-run checks until they pass or a real blocker remains.
-8. Summarize changes, checks run, risks, and tradeoffs.
+7. Before starting the app for browser-based verification, check whether the expected local app is already running and reuse that instance instead of starting a second server on a new port.
+8. Run relevant checks, fix failures, and re-run checks until they pass or a real blocker remains.
+9. Summarize changes, checks run, risks, and tradeoffs.
 
 ## Implementation Plan
 
